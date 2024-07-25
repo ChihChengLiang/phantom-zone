@@ -18,6 +18,7 @@ pub use backend::{
 };
 
 pub use bool::*;
+pub use bool::MULTI_PARTY_CRS;
 pub use ntt::{Ntt, NttBackendU64, NttInit};
 #[cfg(any(feature = "interactive_mp", feature = "non_interactive_mp"))]
 pub use shortint::{div_zero_error_flag, reset_error_flags, FheUint8};

@@ -114,7 +114,7 @@ impl<S: Default + Copy> InteractiveMultiPartyCrs<S> {
 ///         Punture j+1 -> user j's seed    
 #[derive(Clone, PartialEq, Serialize, Deserialize, Debug)]
 pub struct NonInteractiveMultiPartyCrs<S> {
-    pub(super) seed: S,
+    pub seed: S,
 }
 
 impl NonInteractiveMultiPartyCrs<[u8; 32]> {

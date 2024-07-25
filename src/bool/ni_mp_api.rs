@@ -34,7 +34,7 @@ thread_local! {
 static BOOL_SERVER_KEY: OnceLock<ShoupNonInteractiveServerKeyEvaluationDomain<Vec<Vec<u64>>>> =
     OnceLock::new();
 
-static MULTI_PARTY_CRS: OnceLock<NonInteractiveMultiPartyCrs<[u8; 32]>> = OnceLock::new();
+pub static MULTI_PARTY_CRS: OnceLock<NonInteractiveMultiPartyCrs<[u8; 32]>> = OnceLock::new();
 
 pub enum ParameterSelector {
     NonInteractiveLTE2Party,
